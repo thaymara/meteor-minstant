@@ -1,3 +1,5 @@
+# Instant messaging application
+
 In this peer assessment of Meteor course on Coursera, we worked on an instant messaging app called minstant!
 
 You should download and run the starter application, then test it out by logging in as different users in two different web browsers at the same time, seeing if the users if the users can talk to each other. It creates a set of test user accounts automatically, so you can log in as user1@test.com ... user8@test.com with the password test123.

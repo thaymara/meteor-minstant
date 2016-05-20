@@ -1,0 +1,77 @@
+/* CSS declarations go here */
+
+.user_avatar{
+	min-height:100px;
+	text-align: center;
+
+}
+.avatar_img{
+	height:75px;
+}
+
+.panel-heading{
+	color: #FFF !important;
+	background-color: #18bc9c !important;
+	border-color: #18bc9c !important;
+}
+
+.message_avatar{
+	height: 55px;
+	margin: 0 10px;
+	border-radius: 50%;
+}
+
+.message-received{
+	background-color: #18bc9c;	
+}
+
+.message-sent{
+	background-color: #18bc9c;
+	opacity: 0.65;
+}
+
+.padding-message{
+	padding-bottom: 10px;
+}
+
+.message{
+	padding: 10px;
+	margin: 10px 0;
+	color: #FFF;
+	border-radius: 4px;
+}
+
+.message-header{
+	background: #2c3e50;
+	color: #FFF;
+	padding: 5px 10px;
+}
+
+.message-header a {
+	color: #FFF !important;
+}
+
+.h2{
+	font-size:32px;
+}
+
+.panel-chat-box{
+	padding: 5px;
+}
+
+.chat-box{
+	width: 100%;
+	height: 50px;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid #18bc9c;
+	border-left: none;
+	border-radius: 0;
+	margin-bottom: 5px;
+}
+
+.btn-send{
+	padding: 5px;
+	width: 100px;
+	margin-left:90%;
+}

@@ -11,26 +11,10 @@ Meteor.startup(function () {
   });
 
 Meteor.publish("users", function(){
-	var filter = {$or:[
-                {user1Id:this.userId}, 
-                {user2Id:this.userId}
-                ]};
-	
-    	var chat = Chats.find(filter);
-	var users = [];
-	chat.forEach(function(item){
-		users.push(item.user1Id, item.user2Id);
-	});
-
-	return Meteor.users.find({_id:{$in:users}});	
-	//return Meteor.users.find();
+	return Meteor.users.find();
 });
 
 Meteor.publish("chats", function(){
-//	return Chats.find().forEach(function(chat){
-//		chat.user1Id == this.userId || chat.user2Id == this.userId;
-//	});
-
 	var filter = {$or:[
                 {user1Id:this.userId}, 
                 {user2Id:this.userId}

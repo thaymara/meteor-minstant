@@ -1,0 +1,28 @@
+<!-- Top level template for the chat page -->
+<template name="chat_page">
+	<div class="message-header">
+		<a href="/"><span class="glyphicon glyphicon-menu-left"></span>Back</a>
+		<br />
+		<span class="h2">{{chat_user}}</span>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well well-lg well-xs well-sm">
+			{{#each messages}}
+			{{> chat_message}}
+			{{/each}}
+			</div>	
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-md-12">
+			<form class="js-send-chat">
+				<div class="panel panel-success panel-chat-box">
+				<input class="input chat-box" type="text" name="chat" placeholder="type a message here...">
+				
+				<button class="btn btn-primary btn-send">send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</template>

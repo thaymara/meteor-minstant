@@ -1,0 +1,9 @@
+<!-- simple template that displays a message -->
+<template name="chat_message">
+	{{#if isSameUser userid}}	
+		<div class="text-right padding-message"><span class="message message-sent">{{{parseEmoticons text}}}</span> <img src="/{{avatarUser userid}}" class="message_avatar"/></div>
+	{{else}}
+		<div class="text-left padding-message"><img src="/{{avatarUser userid}}" class="message_avatar"/> <span class="message message-received">{{{parseEmoticons text}}}</span></div>
+	{{/if}}
+	
+</template>

@@ -1,0 +1,18 @@
+<!-- display an individual user -->
+<template name="available_user">
+	<div class="col-md-2 col-xs-6">
+		<div class="user_avatar panel panel-success">
+			{{#if isMyUser _id}} 
+			<div class="bg-success panel-heading">{{getUsername _id}} (YOU)</div>
+			
+			<div class="bg-success panel-body"><img src="/{{profile.avatar}}" class="avatar_img"></div>
+			{{else}}
+			<a href="/chat/{{_id}}">
+				<div class="panel-heading">{{getUsername _id}}</div>
+				
+				<div class="panel-body"><img src="/{{profile.avatar}}" class="avatar_img"></div>
+			</a>
+			{{/if}}
+		</div>
+	</div>
+</template>

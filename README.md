@@ -19,3 +19,8 @@ Remove the autopublish package from the application and implement publish and su
 # Challenge: Implement emoticons
 
 Can you implement emoticon functionality which allows the user to insert graphical emoticons into their message? Emoticons are small icons such as smiley faces which are typical of this kind of application. 
+
+# Installation
+1. Make sure you already have Meteor intalled
+2. Into project folder run: `meteor`
+3. Open your web browser and go to http://localhost:3000 to see the app running.
